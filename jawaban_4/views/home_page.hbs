@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Management - VERA DUMBWAYS</title>
+
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRCQqPVG6fY_I2CG1dTaEUr9LIVcnu1DrQfcQ&usqp=CAU"
+                width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            VTUBE
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/video/create">Add Video</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/category/create">Add Category</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-12">
+                {{#if message}}
+                <div class="alert alert-success">
+                    {{message}}
+                </div>
+                {{/if}}
+
+                {{#if error}}
+                <div class="alert alert-danger">
+                    {{ error }}
+                </div>
+                {{/if}}
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
