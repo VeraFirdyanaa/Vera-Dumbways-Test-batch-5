@@ -37,7 +37,7 @@ app.use(session({
 const conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'root',
+    password: '',
     database: 'vera_dumbways'
 });
 
